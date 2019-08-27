@@ -1,18 +1,10 @@
 <?php
-/**
- * Plugin Update Checker Library 4.7
- * http://w-shadow.com/
- *
- * Copyright 2019 Janis Elsts
- * Released under the MIT license. See license.txt for details.
- */
-
 require dirname(__FILE__) . '/Puc/v4p7/Factory.php';
 require dirname(__FILE__) . '/Puc/v4/Factory.php';
 require dirname(__FILE__) . '/Puc/v4p7/Autoloader.php';
 new Puc_v4p7_Autoloader();
 
-//Register classes defined in this version with the factory.
+/*Register classes defined in this version with the factory.*/
 foreach (
 	array(
 		'Plugin_UpdateChecker' => 'Puc_v4p7_Plugin_UpdateChecker',

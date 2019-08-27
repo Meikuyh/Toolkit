@@ -96,20 +96,23 @@ if( !class_exists('Worldmart_Toolkit')) {
                 include_once WORLDMART_TOOLKIT_PATH . 'includes/woo-attributes-swatches/woo-product-attribute-meta.php';
                 include_once WORLDMART_TOOLKIT_PATH . 'includes/woo-category-gallery/woo-category-gallery.php';
             }
-            require WORLDMART_TOOLKIT_PATH .'integration/plugin-update-checker.php';
-            $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-                'https://github.com/Meikuyh/Toolkit',
-                __FILE__, //Full path to the main plugin file or functions.php.
-                'worldmart-toolkit'
-            );
-            $myUpdateChecker->setAuthentication('41ad7d2414b4faa0b03243283dbf54206e2e201e');
-//            $myUpdateChecker->setBranch('master');
+            if( is_admin() ){
+                require WORLDMART_TOOLKIT_PATH .'integration/plugin-update-checker.php';
+                $version_checking = Puc_v4_Factory::buildUpdateChecker(
+                    'https://github.com/Meikuyh/Toolkit',
+                    __FILE__,
+                    'worldmart-toolkit'
+                );
+                $version_checking->setAuthentication('41ad7d2414b4faa0b03243283dbf54206e2e201e');
+            }
         }
     }
 }
+
 if( !function_exists('Worldmart_Toolkit')){
     function Worldmart_Toolkit(){
         new Worldmart_Toolkit();
     }
 }
+
 add_action( 'plugins_loaded', 'Worldmart_Toolkit', 99);
