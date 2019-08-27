@@ -1,0 +1,42 @@
+.frm_input{
+    display: inline-block;
+}
+.frm_input .btn_save, .frm_input .btn_clear{
+    display: inline-block;
+    margin-top: 11px;
+    float: left;
+    font-size: 14px;
+}
+.result p.item-box{
+    display: inline-block;
+    width: initial;
+    float: left;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.result .item-box .txt_info{
+    display: inline-block;
+    width: 64%;
+    float: left;
+    margin: 0 0 8px 0;
+    padding: 0 1%;
+    border: 1px dashed #eee;
+    min-width: 160px;
+    min-height: 19px;
+}
+.result .item-box label{
+    display: inline-block;
+    width: 33%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+div.result{
+    display: inline-block;
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+}

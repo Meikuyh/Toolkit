@@ -1,0 +1,769 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-23 16:13+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: includes/post-types.php:13
+msgid "Mega Builder"
+msgstr ""
+
+#: includes/post-types.php:14
+msgid "Mega menu item"
+msgstr ""
+
+#: includes/post-types.php:15 includes/post-types.php:50
+#: includes/woo-attributes-swatches/woo-product-attribute-meta.php:1
+msgid "Add new"
+msgstr ""
+
+#: includes/post-types.php:16 includes/post-types.php:51
+msgid "Add new menu item"
+msgstr ""
+
+#: includes/post-types.php:17
+msgid "Edit menu item"
+msgstr ""
+
+#: includes/post-types.php:18
+msgid "New menu item"
+msgstr ""
+
+#: includes/post-types.php:19
+msgid "View menu item"
+msgstr ""
+
+#: includes/post-types.php:20
+msgid "Search menu items"
+msgstr ""
+
+#: includes/post-types.php:21
+msgid "No menu items found"
+msgstr ""
+
+#: includes/post-types.php:22
+msgid "No menu items found in trash"
+msgstr ""
+
+#: includes/post-types.php:23
+msgid "Parent menu item:"
+msgstr ""
+
+#: includes/post-types.php:24
+msgid "Menu Builder"
+msgstr ""
+
+#: includes/post-types.php:27
+msgid "Mega Menus."
+msgstr ""
+
+#: includes/post-types.php:48 includes/post-types.php:59
+msgid "Popup Builder"
+msgstr ""
+
+#: includes/post-types.php:49
+msgid "Popup item"
+msgstr ""
+
+#: includes/post-types.php:52
+msgid "Edit popup item"
+msgstr ""
+
+#: includes/post-types.php:53
+msgid "New popup item"
+msgstr ""
+
+#: includes/post-types.php:54
+msgid "View popup item"
+msgstr ""
+
+#: includes/post-types.php:55
+msgid "Search popup items"
+msgstr ""
+
+#: includes/post-types.php:56
+msgid "No popup items found"
+msgstr ""
+
+#: includes/post-types.php:57
+msgid "No popup items found in trash"
+msgstr ""
+
+#: includes/post-types.php:58
+msgid "Parent popup item:"
+msgstr ""
+
+#: includes/post-types.php:62
+msgid "Popup."
+msgstr ""
+
+#: includes/post-types.php:83 includes/post-types.php:84
+msgid "Footers"
+msgstr ""
+
+#: includes/post-types.php:85
+msgid "Add New"
+msgstr ""
+
+#: includes/post-types.php:86
+msgid "Add new footer"
+msgstr ""
+
+#: includes/post-types.php:87
+msgid "Edit footer"
+msgstr ""
+
+#: includes/post-types.php:88
+msgid "New footer"
+msgstr ""
+
+#: includes/post-types.php:89
+msgid "View footer"
+msgstr ""
+
+#: includes/post-types.php:90
+msgid "Search template footer"
+msgstr ""
+
+#: includes/post-types.php:91
+msgid "No template items found"
+msgstr ""
+
+#: includes/post-types.php:92
+msgid "No template items found in trash"
+msgstr ""
+
+#: includes/post-types.php:93
+msgid "Parent template item:"
+msgstr ""
+
+#: includes/post-types.php:94
+msgid "Footer Builder"
+msgstr ""
+
+#: includes/post-types.php:97
+msgid "To Build Template Footer."
+msgstr ""
+
+#: includes/vc_templates.php:8
+msgid "05 Popup"
+msgstr ""
+
+#: includes/vc_templates.php:19
+msgid "01 WorldMart Home 01"
+msgstr ""
+
+#: includes/vc_templates.php:30
+msgid "01 WorldMart  Home 02"
+msgstr ""
+
+#: includes/vc_templates.php:41
+msgid "01 WorldMart Home 03"
+msgstr ""
+
+#: includes/vc_templates.php:51
+msgid "02 WorldMart Footer 01"
+msgstr ""
+
+#: includes/vc_templates.php:61
+msgid "02 WorldMart Footer 02"
+msgstr ""
+
+#: includes/vc_templates.php:71
+msgid "02 WorldMart Footer 03"
+msgstr ""
+
+#: includes/vc_templates.php:81
+msgid "03 WorldMart Mega Menu Demo2"
+msgstr ""
+
+#: includes/vc_templates.php:91
+msgid "03 WorldMart  Mega Menu demo"
+msgstr ""
+
+#: includes/vc_templates.php:101
+msgid "03 WorldMart Mega Menu Digital & Electronics 2"
+msgstr ""
+
+#: includes/vc_templates.php:111
+msgid "03 WorldMart Mega Menu Organics & Spa 2"
+msgstr ""
+
+#: includes/vc_templates.php:121
+msgid "03 WorldMart Mega Menu Kid’s Toys 2"
+msgstr ""
+
+#: includes/vc_templates.php:131
+msgid "03 WorldMart Mega Menu Tools & Equipments 2"
+msgstr ""
+
+#: includes/vc_templates.php:141
+msgid "03 WorldMart Mega Menu Furnitures & Home decors 2"
+msgstr ""
+
+#: includes/vc_templates.php:152
+msgid "03 WorldMart Mega Menu fashion 2"
+msgstr ""
+
+#: includes/vc_templates.php:162
+msgid "03 WorldMart Mega Menu Organics & Spa"
+msgstr ""
+
+#: includes/vc_templates.php:172
+msgid "03 WorldMart Mega Menu Kid’s Toys"
+msgstr ""
+
+#: includes/vc_templates.php:182
+msgid "03 WorldMart Mega Menu Tools & Equipments"
+msgstr ""
+
+#: includes/vc_templates.php:192
+msgid "03 WorldMart Mega Menu Digital & Electronics"
+msgstr ""
+
+#: includes/vc_templates.php:202
+msgid "03 WorldMart Mega Menu Furnitures & Home decors"
+msgstr ""
+
+#: includes/vc_templates.php:212
+msgid "03 WorldMart Mega Menu Fashion"
+msgstr ""
+
+#: includes/vc_templates.php:222
+msgid "04 WorldMart About Us"
+msgstr ""
+
+#: includes/vc_templates.php:232
+msgid "04 WorldMart Contact Us"
+msgstr ""
+
+#: includes/add-share/add-share.php:23
+msgid "Tweet"
+msgstr ""
+
+#: includes/add-share/add-share.php:27
+msgid "Pin It"
+msgstr ""
+
+#: includes/classes/wellcome.php:35
+msgid "Sample Data"
+msgstr ""
+
+#: includes/classes/wellcome.php:36
+msgid "Plugins"
+msgstr ""
+
+#: includes/classes/wellcome.php:37
+msgid "Support"
+msgstr ""
+
+#: includes/classes/wellcome.php:43 includes/classes/wellcome.php:67
+msgid "Permission denied"
+msgstr ""
+
+#: includes/classes/wellcome.php:116
+msgid "Welcome to Worldmart!"
+msgstr ""
+
+#: includes/classes/wellcome.php:117
+msgid "We've assembled some links to get you started"
+msgstr ""
+
+#: includes/classes/wellcome.php:120
+msgid "Get Started"
+msgstr ""
+
+#: includes/classes/wellcome.php:121
+msgid "View All Demos"
+msgstr ""
+
+#: includes/classes/wellcome.php:124
+msgid "Next Steps"
+msgstr ""
+
+#: includes/classes/wellcome.php:126 includes/classes/wellcome.php:265
+msgid "Read Documentation"
+msgstr ""
+
+#: includes/classes/wellcome.php:127 includes/classes/wellcome.php:279
+msgid "Request Support"
+msgstr ""
+
+#: includes/classes/wellcome.php:128
+msgid "View Changelog Details"
+msgstr ""
+
+#: includes/classes/wellcome.php:132
+msgid "Keep in Touch"
+msgstr ""
+
+#: includes/classes/wellcome.php:134
+msgid "Newsletter"
+msgstr ""
+
+#: includes/classes/wellcome.php:135
+msgid "Twitter"
+msgstr ""
+
+#: includes/classes/wellcome.php:136
+msgid "Facebook"
+msgstr ""
+
+#: includes/classes/wellcome.php:208
+msgid "Install"
+msgstr ""
+
+#: includes/classes/wellcome.php:223
+msgid "Update"
+msgstr ""
+
+#: includes/classes/wellcome.php:236
+msgid "Activate"
+msgstr ""
+
+#: includes/classes/wellcome.php:248
+msgid "Deactivate"
+msgstr ""
+
+#: includes/classes/wellcome.php:263
+msgid "Documentation"
+msgstr ""
+
+#: includes/classes/wellcome.php:264
+msgid ""
+"Here is our user guide for Worldmart, including basic setup steps, as well "
+"as Worldmart features and elements for your reference."
+msgstr ""
+
+#: includes/classes/wellcome.php:270
+msgid "Video Tutorials"
+msgstr ""
+
+#: includes/classes/wellcome.php:271
+msgid ""
+"Video tutorials is the great way to show you how to setup Worldmart theme, "
+"make sure that the feature works as it's designed."
+msgstr ""
+
+#: includes/classes/wellcome.php:272
+msgid "See Video"
+msgstr ""
+
+#: includes/classes/wellcome.php:277
+msgid "Forum"
+msgstr ""
+
+#: includes/classes/wellcome.php:278
+msgid ""
+"Can't find the solution on documentation? We're here to help, even on "
+"weekend. Just click here to start 1on1 chatting with us!"
+msgstr ""
+
+#: includes/classes/mailchimp/mailchimp-settings.php:18
+msgid "MailChimp Settings"
+msgstr ""
+
+#: includes/classes/mailchimp/mailchimp-settings.php:19
+msgid "MailChimp"
+msgstr ""
+
+#: includes/classes/mailchimp/mailchimp-settings.php:31
+msgid "Mail Chimp Settings"
+msgstr ""
+
+#: includes/classes/mailchimp/mailchimp-settings.php:55
+msgid "Settings"
+msgstr ""
+
+#: includes/classes/mailchimp/mailchimp-settings.php:62
+msgid "Mail Chimp API Key"
+msgstr ""
+
+#: includes/classes/mailchimp/mailchimp-settings.php:73
+msgid "Email Lists"
+msgstr ""
+
+#: includes/classes/mailchimp/mailchimp-settings.php:81
+msgid "Success message"
+msgstr ""
+
+#: includes/classes/mailchimp/mailchimp-settings.php:125
+msgid ""
+"Enter your mail Chimp API key to enable a newsletter signup option with the "
+"registration form."
+msgstr ""
+
+#: includes/classes/mailchimp/mailchimp-settings.php:127
+#, php-format
+msgid ""
+"<a href=\"%s\" target=\"__blank\">Click here to get your Mailchimp API key</"
+"a>"
+msgstr ""
+
+#: includes/classes/mailchimp/mailchimp.php:28
+#, php-format
+msgid "Please enter Mail Chimp API Key in <a href=\"%s\">here</a>"
+msgstr ""
+
+#: includes/classes/mailchimp/mailchimp.php:58
+msgid "Your email added..."
+msgstr ""
+
+#: includes/classes/mailchimp/mailchimp.php:66
+msgid "Failed"
+msgstr ""
+
+#: includes/classes/mailchimp/MCAPI.class.php:71
+msgid "Read more about common connectivity issues."
+msgstr ""
+
+#: includes/live-search/live-search.php:53
+#: includes/widgets/widget-products.php:18
+msgid "View All"
+msgstr ""
+
+#: includes/live-search/live-search.php:54
+msgid "Product Matches"
+msgstr ""
+
+#: includes/live-search/live-search.php:55
+msgid "Results"
+msgstr ""
+
+#: includes/live-search/live-search.php:206
+msgid "No results."
+msgstr ""
+
+#: includes/live-search/live-search.php:313
+msgid "Search products"
+msgstr ""
+
+#: includes/live-search/live-search.php:321
+msgid "All Categories"
+msgstr ""
+
+#: includes/live-search/live-search.php:346
+msgid "Search"
+msgstr ""
+
+#: includes/live-search/widget.php:13
+msgid "A widget that displays Live Search Form"
+msgstr ""
+
+#: includes/live-search/widget.php:15
+msgid "Ovic: Live Search"
+msgstr ""
+
+#: includes/live-search/widget.php:54
+#: includes/widgets/widget-latest-posts.php:1
+#: includes/widgets/widget-products.php:93
+#: includes/widgets/widget-terms-of-service.php:34
+#: includes/widgets/quote-box-widget/widget-quote-box.php:37
+#: includes/widgets/widget-icon-box/widget-icon-box.php:34
+#: includes/widgets/widget-icon-box/widget-icon-box.php:108
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:86
+msgid "Title:"
+msgstr ""
+
+#: includes/live-search/widget.php:60
+msgid "Placeholder Text:"
+msgstr ""
+
+#: includes/meta-box/meta-box.php:178
+msgid "Please correct the errors highlighted below and try again."
+msgstr ""
+
+#: includes/shortcodes/banner.php:83
+msgid "shop now"
+msgstr ""
+
+#: includes/shortcodes/banner.php:97
+msgid "view more"
+msgstr ""
+
+#: includes/shortcodes/banner.php:102
+msgid "product is not valid"
+msgstr ""
+
+#: includes/shortcodes/newsletter.php:46
+msgid "Subscribe"
+msgstr ""
+
+#: includes/shortcodes/products.php:127
+msgid "View all"
+msgstr ""
+
+#: includes/shortcodes/products.php:176
+msgid "No Product"
+msgstr ""
+
+#: includes/widgets/widget-latest-posts.php:1
+msgid ""
+"A widget that displays your latest posts from all categories or a certain"
+msgstr ""
+
+#: includes/widgets/widget-latest-posts.php:1
+msgid "Worldmart: Latest Posts"
+msgstr ""
+
+#: includes/widgets/widget-latest-posts.php:1
+msgid "Latest Posts"
+msgstr ""
+
+#: includes/widgets/widget-latest-posts.php:1
+msgid "All categories"
+msgstr ""
+
+#: includes/widgets/widget-latest-posts.php:1
+msgid "Number of posts to show:"
+msgstr ""
+
+#: includes/widgets/widget-products.php:7
+msgid "A widget that displays your custom product list"
+msgstr ""
+
+#: includes/widgets/widget-products.php:9
+msgid "Worldmart: Custom products"
+msgstr ""
+
+#: includes/widgets/widget-products.php:85
+msgid "Custom product list"
+msgstr ""
+
+#: includes/widgets/widget-products.php:102
+msgid "Filter by Category:"
+msgstr ""
+
+#: includes/widgets/widget-products.php:114
+msgid "Product type:"
+msgstr ""
+
+#: includes/widgets/widget-products.php:124
+msgid "Max number:"
+msgstr ""
+
+#: includes/widgets/widget-terms-of-service.php:8
+msgid "Shows terms of service"
+msgstr ""
+
+#: includes/widgets/widget-terms-of-service.php:10
+msgid "Worldmart: Terms Of Service"
+msgstr ""
+
+#: includes/widgets/widget-terms-of-service.php:30
+#: includes/widgets/widget-icon-box/widget-icon-box.php:31
+#: includes/widgets/widget-icon-box/widget-icon-box.php:105
+msgid "Font icon class:"
+msgstr ""
+
+#: includes/widgets/widget-terms-of-service.php:38
+#: includes/widgets/widget-icon-box/widget-icon-box.php:37
+#: includes/widgets/widget-icon-box/widget-icon-box.php:111
+msgid "Subtitle:"
+msgstr ""
+
+#: includes/widgets/widget-terms-of-service.php:42
+#: includes/widgets/widget-icon-box/widget-icon-box.php:40
+#: includes/widgets/widget-icon-box/widget-icon-box.php:114
+msgid "Describer:"
+msgstr ""
+
+#: includes/widgets/widget-terms-of-service.php:46
+#: includes/widgets/widget-icon-box/widget-icon-box.php:43
+#: includes/widgets/widget-icon-box/widget-icon-box.php:117
+msgid "Link to page:"
+msgstr ""
+
+#: includes/widgets/widget-terms-of-service.php:59
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:177
+msgid "Title"
+msgstr ""
+
+#: includes/widgets/widget-terms-of-service.php:64
+msgid "Subtitle"
+msgstr ""
+
+#: includes/widgets/widget-terms-of-service.php:69
+msgid "Describer"
+msgstr ""
+
+#: includes/widgets/widget-terms-of-service.php:74
+msgid "Font icon class"
+msgstr ""
+
+#: includes/widgets/widget-terms-of-service.php:79
+msgid "Link to page"
+msgstr ""
+
+#: includes/widgets/quote-box-widget/widget-quote-box.php:8
+msgid "A widget that displays your quote to sidebar box quote"
+msgstr ""
+
+#: includes/widgets/quote-box-widget/widget-quote-box.php:10
+msgid "Worldmart: Quote box"
+msgstr ""
+
+#: includes/widgets/quote-box-widget/widget-quote-box.php:29
+msgid "Quote of the Day"
+msgstr ""
+
+#: includes/widgets/quote-box-widget/widget-quote-box.php:42
+msgid "Content:"
+msgstr ""
+
+#: includes/widgets/quote-box-widget/widget-quote-box.php:47
+msgid "Input an image: "
+msgstr ""
+
+#: includes/widgets/widget-icon-box/widget-icon-box.php:8
+msgid "Shows icon box content"
+msgstr ""
+
+#: includes/widgets/widget-icon-box/widget-icon-box.php:10
+msgid "Worldmart: Icon box"
+msgstr ""
+
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:21
+msgid ""
+"Shows a custom attribute in a widget which lets you narrow down the list of "
+"products when viewing product categories."
+msgstr ""
+
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:23
+msgid "Worldmart: WooCommerce Layered Nav"
+msgstr ""
+
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:58
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:176
+msgid "Filter by"
+msgstr ""
+
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:90
+msgid "Product attribute:"
+msgstr ""
+
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:98
+msgid "Display type:"
+msgstr ""
+
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:100
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:190
+msgid "List"
+msgstr ""
+
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:101
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:191
+msgid "Dropdown"
+msgstr ""
+
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:102
+msgid "Inline"
+msgstr ""
+
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:104
+#: includes/woo-attributes-swatches/woo-product-attribute-meta.php:1
+msgid "Color"
+msgstr ""
+
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:109
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:197
+msgid "Query type"
+msgstr ""
+
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:111
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:199
+msgid "AND"
+msgstr ""
+
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:112
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:200
+msgid "OR"
+msgstr ""
+
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:116
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:206
+msgid "Number to show:"
+msgstr ""
+
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:120
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:211
+msgid "Attachment banner:"
+msgstr ""
+
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:182
+msgid "Attribute"
+msgstr ""
+
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:188
+msgid "Display type"
+msgstr ""
+
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:327
+#, php-format
+msgid "Any %s"
+msgstr ""
+
+#: includes/widgets/widget-woo-layered-nav/widget-woo-layered-nav.php:517
+msgid "Show more"
+msgstr ""
+
+#: includes/woo-attributes-swatches/woo-product-attribute-meta.php:1
+msgid "Color style"
+msgstr ""
+
+#: includes/woo-attributes-swatches/woo-product-attribute-meta.php:1
+msgid "Select terms"
+msgstr ""
+
+#: includes/woo-attributes-swatches/woo-product-attribute-meta.php:1
+msgid "Select all"
+msgstr ""
+
+#: includes/woo-attributes-swatches/woo-product-attribute-meta.php:1
+msgid "Select none"
+msgstr ""
+
+#: includes/woo-attributes-swatches/woo-product-attribute-meta.php:1
+msgid "Type"
+msgstr ""
+
+#: includes/woo-attributes-swatches/woo-product-attribute-meta.php:1
+msgid "None"
+msgstr ""
+
+#: includes/woo-attributes-swatches/woo-product-attribute-meta.php:1
+msgid "Photo"
+msgstr ""
+
+#: includes/woo-attributes-swatches/woo-product-attribute-meta.php:1
+msgid "Label"
+msgstr ""
+
+#: includes/woo-attributes-swatches/woo-product-attribute-meta.php:1
+msgid "Thumbnail"
+msgstr ""
+
+#: includes/woo-attributes-swatches/woo-product-attribute-meta.php:1
+msgid "Upload/Add image"
+msgstr ""
+
+#: includes/woo-attributes-swatches/woo-product-attribute-meta.php:1
+msgid "Remove image"
+msgstr ""
+
+#: includes/woo-category-gallery/woo-category-gallery.php:14
+msgid "galleries"
+msgstr ""

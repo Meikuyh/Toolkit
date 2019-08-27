@@ -1,0 +1,9 @@
+.dataTables_scroll .compare-list.dataTable li{
+    list-style: none;
+}
+.dataTables_scroll>.dataTables_scrollBody{
+    overflow: visible!important;
+}
+.DTFC_ScrollWrapper .DTFC_LeftWrapper .DTFC_LeftBodyWrapper{
+    overflow: inherit!important;
+}

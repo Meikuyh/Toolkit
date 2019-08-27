@@ -1,0 +1,89 @@
+.result-image-id{
+	display: block;
+	min-width: 50px;
+	background-color: aliceblue;
+}
+.wrap-option{
+	display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    float: right;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.btn-option {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 0 0 0 5px;
+    padding: 0;
+    border: 1px solid rgba(255,255,255,0.6);
+    color: #333;
+    line-height: 30px;
+    float: left;
+    background-color: rgba(255,255,255,0.6);
+}
+.btn-option:hover{
+    /*color: darkorange;*/
+	color: #f44141;
+    /*border-color: darkorange;*/
+	border-color: #f44141;
+	cursor: pointer;
+}
+.wrap-element{
+    display: inline;
+    padding: 5px 0;
+    float: left;
+    position: relative;
+}
+.wrap-element:first-child{
+    padding-top: 0;
+}
+.wrap-gallery{
+	display: inline-block;
+    width: calc(100% - 20px);
+    min-height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.wrap-gallery .wrap-input{
+	display: inline-block;
+	width: 100%;
+    position: relative;
+}
+.wrap-element .media{
+	padding: 0;
+	margin: 0;
+	display: block;
+	width: 100%;
+	float: left;
+}
+.wrap-element .media img{
+	display: inline-block;
+	width: 100%;
+}
+#delete_all_gallery{
+    margin-left: 10px;
+}
+.wrap-input .title-page{
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.wrap-input .title-page::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-radius: 1px;
+    top: 18px;
+    left: 0px;
+    background-color: #ddd;
+}
+/*style="display: block; height: 30px; width: 30px; float: left; text-align: center"*/
