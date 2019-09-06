@@ -19,14 +19,9 @@ if( !class_exists('Worldmart_Wellcome') ){
         }
 
         public  function  enqueue_scripts(){
-            if( defined('WORLDMART_THEME_URI' ) ){
-                wp_enqueue_style( 'chosen' );
-                wp_enqueue_script( 'chosen');
-            }else{
-                wp_enqueue_style( 'chosen', WORLDMART_TOOLKIT_URL . '/assets/css/chosen.min.css', array(),'1.0.0');
-                wp_enqueue_script( 'chosen', WORLDMART_TOOLKIT_URL . '/assets/js/chosen.min.js', array( 'jquery' ), '1.0.0', true );
-            }
+            wp_enqueue_style( 'chosen', WORLDMART_TOOLKIT_URL . '/assets/css/chosen.min.css', array(),'1.0.0');
             wp_enqueue_style( 'worldmart-admin', WORLDMART_TOOLKIT_URL . '/assets/css/admin.css', array(), WORLDMART_TOOLKIT_VERSION );
+            wp_enqueue_script( 'chosen', WORLDMART_TOOLKIT_URL . '/assets/js/chosen.min.js', array( 'jquery' ), '1.0.0', true );
             wp_enqueue_script( 'worldmart-admin', WORLDMART_TOOLKIT_URL . '/assets/js/admin.js', array( 'jquery' ), WORLDMART_TOOLKIT_VERSION, true );
         }
 
