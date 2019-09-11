@@ -171,7 +171,6 @@ img{
 
     }
 }
-
 #worldmart_testimonial_option:before,
 #worldmart_testimonial_option:after{
     content: '';
@@ -187,4 +186,7 @@ img{
 }
 .postbox .inside:after{
     clear: both;
+}
+#adminmenu .toplevel_page_worldmart .wp-menu-image img{
+    padding-top: 6px;
 }
