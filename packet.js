@@ -1,6 +1,6 @@
 {
 	"name": "Worldmart Toolkit",
-	"version": "1.1.6",
+	"version": "1.1.7",
 	"download_url": "http://plugins.kutethemes.net/worldmart-toolkit.zip",
 
 	"homepage": "https://worldmart.kutethemes.net/",

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-27 14:48+0700\n"
+"POT-Creation-Date: 2019-09-20 17:37+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -258,115 +258,115 @@ msgstr ""
 msgid "Pin It"
 msgstr ""
 
-#: includes/classes/wellcome.php:35
+#: includes/classes/wellcome.php:30
 msgid "Sample Data"
 msgstr ""
 
-#: includes/classes/wellcome.php:36
+#: includes/classes/wellcome.php:31
 msgid "Plugins"
 msgstr ""
 
-#: includes/classes/wellcome.php:37
+#: includes/classes/wellcome.php:32
 msgid "Support"
 msgstr ""
 
-#: includes/classes/wellcome.php:43 includes/classes/wellcome.php:67
+#: includes/classes/wellcome.php:38 includes/classes/wellcome.php:62
 msgid "Permission denied"
 msgstr ""
 
-#: includes/classes/wellcome.php:116
+#: includes/classes/wellcome.php:111
 msgid "Welcome to Worldmart!"
 msgstr ""
 
-#: includes/classes/wellcome.php:117
+#: includes/classes/wellcome.php:112
 msgid "We've assembled some links to get you started"
 msgstr ""
 
-#: includes/classes/wellcome.php:120
+#: includes/classes/wellcome.php:115
 msgid "Get Started"
 msgstr ""
 
-#: includes/classes/wellcome.php:121
+#: includes/classes/wellcome.php:116
 msgid "View All Demos"
 msgstr ""
 
-#: includes/classes/wellcome.php:124
+#: includes/classes/wellcome.php:119
 msgid "Next Steps"
 msgstr ""
 
-#: includes/classes/wellcome.php:126 includes/classes/wellcome.php:265
+#: includes/classes/wellcome.php:121 includes/classes/wellcome.php:260
 msgid "Read Documentation"
 msgstr ""
 
-#: includes/classes/wellcome.php:127 includes/classes/wellcome.php:279
+#: includes/classes/wellcome.php:122 includes/classes/wellcome.php:274
 msgid "Request Support"
 msgstr ""
 
-#: includes/classes/wellcome.php:128
+#: includes/classes/wellcome.php:123
 msgid "View Changelog Details"
 msgstr ""
 
-#: includes/classes/wellcome.php:132
+#: includes/classes/wellcome.php:127
 msgid "Keep in Touch"
 msgstr ""
 
-#: includes/classes/wellcome.php:134
+#: includes/classes/wellcome.php:129
 msgid "Newsletter"
 msgstr ""
 
-#: includes/classes/wellcome.php:135
+#: includes/classes/wellcome.php:130
 msgid "Twitter"
 msgstr ""
 
-#: includes/classes/wellcome.php:136
+#: includes/classes/wellcome.php:131
 msgid "Facebook"
 msgstr ""
 
-#: includes/classes/wellcome.php:208
+#: includes/classes/wellcome.php:203
 msgid "Install"
 msgstr ""
 
-#: includes/classes/wellcome.php:223
+#: includes/classes/wellcome.php:218
 msgid "Update"
 msgstr ""
 
-#: includes/classes/wellcome.php:236
+#: includes/classes/wellcome.php:231
 msgid "Activate"
 msgstr ""
 
-#: includes/classes/wellcome.php:248
+#: includes/classes/wellcome.php:243
 msgid "Deactivate"
 msgstr ""
 
-#: includes/classes/wellcome.php:263
+#: includes/classes/wellcome.php:258
 msgid "Documentation"
 msgstr ""
 
-#: includes/classes/wellcome.php:264
+#: includes/classes/wellcome.php:259
 msgid ""
 "Here is our user guide for Worldmart, including basic setup steps, as well "
 "as Worldmart features and elements for your reference."
 msgstr ""
 
-#: includes/classes/wellcome.php:270
+#: includes/classes/wellcome.php:265
 msgid "Video Tutorials"
 msgstr ""
 
-#: includes/classes/wellcome.php:271
+#: includes/classes/wellcome.php:266
 msgid ""
 "Video tutorials is the great way to show you how to setup Worldmart theme, "
 "make sure that the feature works as it's designed."
 msgstr ""
 
-#: includes/classes/wellcome.php:272
+#: includes/classes/wellcome.php:267
 msgid "See Video"
 msgstr ""
 
-#: includes/classes/wellcome.php:277
+#: includes/classes/wellcome.php:272
 msgid "Forum"
 msgstr ""
 
-#: includes/classes/wellcome.php:278
+#: includes/classes/wellcome.php:273
 msgid ""
 "Can't find the solution on documentation? We're here to help, even on "
 "weekend. Just click here to start 1on1 chatting with us!"
@@ -764,7 +764,7 @@ msgstr ""
 msgid "Remove image"
 msgstr ""
 
-#: includes/woo-category-gallery/woo-category-gallery.php:14
+#: includes/woo-category-gallery/woo-category-gallery.php:38
 msgid "galleries"
 msgstr ""
 

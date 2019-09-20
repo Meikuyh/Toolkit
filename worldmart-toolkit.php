@@ -3,7 +3,7 @@
  * Plugin Name: Worldmart Toolkit
  * Plugin URI:  https://kutethemes.com
  * Description: Worldmart toolkit for Worldmart theme. Currently supports the following theme functionality: shortcodes, CPT.
- * Version:     1.1.6
+ * Version:     1.1.7
  * Author:      Kutethemes Team
  * Author URI:  https://kutethemes.com
  * License:     GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
@@ -25,33 +25,28 @@ define( 'WORLDMART_TOOLKIT_PATH', plugin_dir_path( __FILE__ ) );
 define( 'WORLDMART_TOOLKIT_PLUGIN_FILE', __FILE__ );
 
 if( !class_exists('Worldmart_Toolkit')) {
-    class Worldmart_Toolkit
-    {
+    class Worldmart_Toolkit{
 
-        public $version = '1.1.6';
+        public $version = '1.1.7';
 
-        public function __construct()
-        {
+        public function __construct(){
             $this->define_constants();
             $this->includes();
             $this->init_hooks();
         }
 
-        private function define_constants()
-        {
+        private function define_constants(){
             $this->define('WORLDMART_TOOLKIT_VERSION', $this->version);
             $this->define('WORLDMART_TOOLKIT_ABSPATH', dirname(WORLDMART_TOOLKIT_PLUGIN_FILE) . '/');
         }
 
-        private function define($name, $value)
-        {
+        private function define($name, $value){
             if (!defined($name)) {
                 define($name, $value);
             }
         }
 
-        private function init_hooks()
-        {
+        private function init_hooks(){
             add_action('init', array($this, 'load_plugin_textdomain'));
             add_action('admin_enqueue_scripts', array($this, 'enqueue_scripts'));
             add_action('wp_head', function (){
@@ -59,21 +54,18 @@ if( !class_exists('Worldmart_Toolkit')) {
             }, 99999);
         }
 
-        public function load_plugin_textdomain()
-        {
+        public function load_plugin_textdomain(){
             load_plugin_textdomain('worldmart-toolkit', false, plugin_basename(dirname(WORLDMART_TOOLKIT_PLUGIN_FILE)) . '/languages');
         }
 
-        public function enqueue_scripts()
-        {
+        public function enqueue_scripts(){
             wp_enqueue_script('jquery');
             wp_enqueue_script('jquery-ui-datepicker');
             wp_enqueue_style('jquery-ui-datepicker');
             wp_enqueue_style('type-admin', WORLDMART_TOOLKIT_URL . '/assets/css/admin-redux.css');
         }
 
-        public function includes()
-        {
+        public function includes(){
             include_once WORLDMART_TOOLKIT_PATH . 'includes/classes/wellcome.php';
             include_once WORLDMART_TOOLKIT_PATH . 'includes/classes/mailchimp/MCAPI.class.php';
             include_once WORLDMART_TOOLKIT_PATH . 'includes/classes/mailchimp/mailchimp-settings.php';
@@ -109,10 +101,9 @@ if( !class_exists('Worldmart_Toolkit')) {
     }
 }
 
-if( !function_exists('Worldmart_Toolkit')){
+if( !function_exists( 'Worldmart_Toolkit')){
     function Worldmart_Toolkit(){
         new Worldmart_Toolkit();
     }
+    add_action( 'plugins_loaded', 'Worldmart_Toolkit', 99 );
 }
-
-add_action( 'plugins_loaded', 'Worldmart_Toolkit', 99);
