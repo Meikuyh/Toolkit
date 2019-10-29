@@ -3,7 +3,7 @@
  * Plugin Name: Worldmart Toolkit
  * Plugin URI:  https://kutethemes.com
  * Description: Worldmart toolkit for Worldmart theme. Currently supports the following theme functionality: shortcodes, CPT.
- * Version:     1.1.7
+ * Version:     1.1.8
  * Author:      Kutethemes Team
  * Author URI:  https://kutethemes.com
  * License:     GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
@@ -27,7 +27,7 @@ define( 'WORLDMART_TOOLKIT_PLUGIN_FILE', __FILE__ );
 if( !class_exists('Worldmart_Toolkit')) {
     class Worldmart_Toolkit{
 
-        public $version = '1.1.7';
+        public $version = '1.1.8';
 
         public function __construct(){
             $this->define_constants();

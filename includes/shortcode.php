@@ -316,11 +316,13 @@ if( !class_exists('Worldmart_Toolkit_Shortcode')){
                     }
                     break;
                 case 'featured_products' :
-                    $meta_query[] = array(
-                        'key'   => '_featured',
-                        'value' => 'yes'
+                    $args[ 'tax_query' ][] =  array(
+                        array(
+                            'taxonomy' => 'product_visibility',
+                            'field'    => 'name',
+                            'terms'    => 'featured',
+                        )
                     );
-                    $args[ 'meta_query' ]   = $meta_query;
                     break;
                 case 'product_attribute' :
                     //'recent-product'
