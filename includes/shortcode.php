@@ -21,10 +21,10 @@ if( !class_exists('Worldmart_Toolkit_Shortcode')){
 
         public function __construct() {
             if ( ! empty( $this->shortcode ) ) {
-                // Add shortcode.
+                /* Add shortcode.*/
                 add_shortcode( "worldmart_{$this->shortcode}", array( &$this, 'output_html' ) );
 
-                // Hook into post saving.
+                /* Hook into post saving.*/
                 add_action( 'save_post', array( &$this, 'update_post' ) );
 
             }
@@ -41,12 +41,12 @@ if( !class_exists('Worldmart_Toolkit_Shortcode')){
                 return;
             }
 
-            // Set and replace content.
+            /* Set and replace content.*/
             $post = $this->replace_post( $post_id );
             if ( $post ) {
-                // Generate custom CSS.
+                /* Generate custom CSS.*/
                 $css = $this->get_css( $post->post_content );
-                // Update post and save CSS to post meta.
+                /* Update post and save CSS to post meta.*/
                 $this->save_post( $post );
                 $this->save_postmeta( $post_id, $css );
             } else {
@@ -62,21 +62,17 @@ if( !class_exists('Worldmart_Toolkit_Shortcode')){
          * @return  WP_Post object or null.
          */
         public function replace_post( $post_id ) {
-            // Get post.
+            /* Get post.*/
             $post = get_post( $post_id );
-
             if ( $post ) {
                 if ( has_shortcode( $post->post_content, "worldmart_{$this->shortcode}" ) ) {
-
                     $post->post_content = preg_replace_callback(
                         '/(' . $this->shortcode . '_custom_id)="[^"]+"/',
                         'worldmart_toolkit_shortcode_replace_post_callback',
                         $post->post_content
                     );
-
                 }
             }
-
             return $post;
         }
 
@@ -120,15 +116,15 @@ if( !class_exists('Worldmart_Toolkit_Shortcode')){
          * @return  void
          */
         public function save_post( $post ) {
-            // Sanitize post data for inserting into database.
+            /* Sanitize post data for inserting into database.*/
             $data = sanitize_post( $post, 'db' );
 
-            // Update post content.
+            /* Update post content.*/
             global $wpdb;
 
             $wpdb->query( "UPDATE {$wpdb->posts} SET post_content = '" . esc_sql( $data->post_content ) . "' WHERE ID = {$data->ID};" );
 
-            // Update post cache.
+            /* Update post cache.*/
             $data = sanitize_post( $post, 'raw' );
 
             wp_cache_replace( $data->ID, $data, 'posts' );
@@ -195,8 +191,11 @@ if( !class_exists('Worldmart_Toolkit_Shortcode')){
                 $result .= 'data-autoplay="'.$atts[$prefix.'autoplay'].'" ';
             if(isset($atts[$prefix.'navigation']))
                 $result .= 'data-nav="'.$atts[$prefix.'navigation'].'" ';
-            if(isset($atts[$prefix.'dots']))
+            if(isset($atts[$prefix.'dots'])){
                 $result .= 'data-dots="'.$atts[$prefix.'dots'].'" ';
+            }else{
+                $result .= 'data-dots="false"';
+            }
             if(isset($atts[$prefix.'loop']))
                 $result .= 'data-loop="'.$atts[$prefix.'loop'].'" ';
             if(isset($atts[$prefix.'slidespeed']))
@@ -204,8 +203,7 @@ if( !class_exists('Worldmart_Toolkit_Shortcode')){
             if(isset($atts[$prefix.'items']))
                 $result .= 'data-items="'.$atts[$prefix.'items'].'" ';
             if(isset($atts[$prefix.'margin']))
-//                $margin = $atts[$prefix.'margin'];
-            $result .= 'data-margin="'.$atts[$prefix.'margin'].'" ';
+                $result .= 'data-margin="'.$atts[$prefix.'margin'].'" ';
 
             $responsive = '';
             if(isset($atts[$prefix.'ts_items'])){
@@ -325,7 +323,7 @@ if( !class_exists('Worldmart_Toolkit_Shortcode')){
                     );
                     break;
                 case 'product_attribute' :
-                    //'recent-product'
+                    /*'recent-product'*/
                     $args[ 'tax_query' ] =  array(
                         array(
                             'taxonomy' => strstr( $atts['attribute'], 'pa_' ) ? sanitize_title( $atts['attribute'] ) : 'pa_' . sanitize_title( $atts['attribute'] ),
@@ -345,13 +343,13 @@ if( !class_exists('Worldmart_Toolkit_Shortcode')){
                     $args['order'] 	= $order;
                     break;
                 default :
-                    //'recent-product'
+                    /*'recent-product'*/
                     $args[ 'orderby' ] = $orderby;
                     $args[ 'order' ]   = $order;
                     if ( isset( $ordering_args['meta_key'] ) ) {
                         $args['meta_key'] = $ordering_args['meta_key'];
                     }
-                    // Remove ordering query arguments
+                    /* Remove ordering query arguments*/
                     WC()->query->remove_ordering_args();
                     break;
             endswitch;
@@ -363,15 +361,13 @@ if( !class_exists('Worldmart_Toolkit_Shortcode')){
 if ( ! function_exists( 'worldmart_toolkit_shortcode_replace_post_callback' ) ) {
 
     function worldmart_toolkit_shortcode_replace_post_callback( $matches ) {
-        // Generate a random string to use as element ID.
+        /* Generate a random string to use as element ID.*/
         $id = 'worldmart_custom_css_' . mt_rand();
-
-
         return $matches[1] . '="' . $id . '"';
     }
 }
 
-// Check plugin wc is activate
+/* Check plugin wc is activate*/
 $active_plugin_wc = is_plugin_active( 'woocommerce/woocommerce.php' );
 $shortcodes = array(
     'tabs',
@@ -395,13 +391,13 @@ if( $active_plugin_wc ){
 }
 
 foreach ( $shortcodes as $shortcode ) {
-    // Include shortcode class declaration file.
+    /* Include shortcode class declaration file.*/
     $shortcode = str_replace( '_', '-', $shortcode );
     if ( is_file( WORLDMART_TOOLKIT_PATH . '/includes/shortcodes/' . $shortcode . '.php' ) ) {
         include_once WORLDMART_TOOLKIT_PATH . '/includes/shortcodes/' . $shortcode . '.php';
     }
 
-    // Generate shortcode class name.
+    /* Generate shortcode class name.*/
    $class = 'Worldmart_Toolkit_Shortcode_' . implode( '_', array_map( 'ucfirst', explode( '-', $shortcode ) ) );
     if ( class_exists( $class ) ) {
         $shortcode = new $class();
@@ -410,7 +406,7 @@ foreach ( $shortcodes as $shortcode ) {
 
 if( !function_exists('worldmart_shortcode_print_inline_css') ){
     function worldmart_shortcode_print_inline_css() {
-        // Get all custom inline CSS.
+        /* Get all custom inline CSS.*/
         if ( is_singular()  ) {
             $post_custom_css = get_post_meta( get_the_ID(), '_worldmart_shortcode_custom_css', true );
             $inline_css[] = $post_custom_css;

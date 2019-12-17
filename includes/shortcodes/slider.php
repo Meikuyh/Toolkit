@@ -1,5 +1,4 @@
 <?php
-
 if (!class_exists('Worldmart_Toolkit_Shortcode_Slider')){
     class Worldmart_Toolkit_Shortcode_Slider extends  Worldmart_Toolkit_Shortcode{
         /**
@@ -27,18 +26,20 @@ if (!class_exists('Worldmart_Toolkit_Shortcode_Slider')){
             return $css;
         }
 
-
         public function output_html( $atts, $content = null ){
             $atts = function_exists('vc_map_get_attributes') ? vc_map_get_attributes('worldmart_slider', $atts) : $atts;
-
-            // Extract shortcode parameters.
+            $style = 'default';
+            $el_class = '';
+            $slider_custom_id = '';
+            $owl_navigation_position = '';
+            $css = '';
+            /* Extract shortcode parameters.*/
             extract($atts);
-
 
             $css_class = array('worldmart-slider');
             $css_class[] = 'slider-style-'.$style;
-            $css_class[] = $atts['el_class'];
-            $css_class[] =  $atts['slider_custom_id'];
+            $css_class[] = $el_class;
+            $css_class[] = $slider_custom_id;
 
             if ( function_exists( 'vc_shortcode_custom_css_class' ) ){
                 $css_class[] = ' ' . apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, vc_shortcode_custom_css_class( $css, ' ' ), '', $atts );
@@ -47,14 +48,12 @@ if (!class_exists('Worldmart_Toolkit_Shortcode_Slider')){
             ob_start();
             ?>
             <div class="<?php echo esc_attr( implode(' ', $css_class) );?>">
-                <div class="owl-carousel <?php echo esc_attr( $owl_navigation_position );?>" <?php echo $owl_settings;?>>
+                <div class="owl-carousel <?php echo esc_attr( $owl_navigation_position );?>" <?php echo $owl_settings; ?> >
                     <?php echo wpb_js_remove_wpautop( $content ); ?>
                 </div>
-
             </div>
             <?php
             $html = ob_get_clean();
-
             return apply_filters( 'worldmart_toolkit_shortcode_slider', force_balance_tags( $html ), $atts ,$content );
         }
     }

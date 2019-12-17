@@ -13,21 +13,24 @@ if ( !function_exists( 'worldmart_single_product_share' ) ) {
         ?>
 
         <div class="worldmart-single-product-socials">
+
             <!-- Facebook -->
             <div class="fb-like" data-href="<?php echo esc_url( $url ); ?>" data-layout="button_count"
                  data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+
             <!-- Twitter -->
             <a class="twitter-share-button"
                href="<?php echo esc_url( add_query_arg( array( 'text' => urlencode( get_the_title( $post->ID ) ), 'url' => $url ), 'https://twitter.com/intent/tweet' ) ); ?>"
                data-size="small">
                 <?php esc_html_e( 'Tweet', 'worldmart' ); ?></a>
             <!-- Pinit -->
-            <?php ?>
+
             <a href="<?php echo esc_url( add_query_arg( array( 'url' => $url, 'media' => $thum_image[ 0 ], 'description' => urlencode( get_the_title( $post->ID ) ) ), 'http://pinterest.com/pin/create/button/' ) ); ?>"
                class="pin-it-button" count-layout="hozizontal"><?php esc_html_e( 'Pin It', 'worldmart' ); ?></a>
+
             <!-- G+ -->
-            <div class="g-plus" data-action="share" data-annotation="bubble"
-                 data-href="<?php echo esc_url( $url ); ?>"></div>
+            <!--<div class="g-plus" data-action="share" data-annotation="bubble" data-href="<?php /*echo esc_url( $url ); */?>"></div>-->
+
         </div>
         <?php
     }
@@ -104,7 +107,7 @@ if ( !function_exists( 'worldmart_print_scripts' ) ) {
         </script>
 
         <!-- G+ -->
-        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
         <?php
 
     }
