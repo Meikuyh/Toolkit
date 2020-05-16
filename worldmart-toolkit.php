@@ -3,7 +3,7 @@
  * Plugin Name: Worldmart Toolkit
  * Plugin URI:  https://kutethemes.com
  * Description: Worldmart toolkit for Worldmart theme. Currently supports the following theme functionality: shortcodes, CPT.
- * Version:     1.1.9
+ * Version:     1.2.0
  * Author:      Kutethemes Team
  * Author URI:  https://kutethemes.com
  * License:     GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
@@ -27,7 +27,7 @@ define( 'WORLDMART_TOOLKIT_PLUGIN_FILE', __FILE__ );
 if( !class_exists('Worldmart_Toolkit')) {
     class Worldmart_Toolkit{
 
-        public $version = '1.1.9';
+        public $version = '1.2.0';
 
         public function __construct(){
             $this->define_constants();
@@ -38,6 +38,10 @@ if( !class_exists('Worldmart_Toolkit')) {
         private function define_constants(){
             $this->define('WORLDMART_TOOLKIT_VERSION', $this->version);
             $this->define('WORLDMART_TOOLKIT_ABSPATH', dirname(WORLDMART_TOOLKIT_PLUGIN_FILE) . '/');
+            $wm_options = get_option('worldmart');
+            if ( ! empty( $wm_options ) && is_array( $wm_options ) ) {
+                $this->define( 'WORLDMART_OPTIONS' , $wm_options );
+            }
         }
 
         private function define($name, $value){
@@ -49,9 +53,8 @@ if( !class_exists('Worldmart_Toolkit')) {
         private function init_hooks(){
             add_action('init', array($this, 'load_plugin_textdomain'));
             add_action('admin_enqueue_scripts', array($this, 'enqueue_scripts'));
-            add_action('wp_head', function (){
-                echo '<link rel="stylesheet" href="' . WORLDMART_TOOLKIT_URL . '/assets/css/custom.css' . '">';
-            }, 99999);
+            add_filter('ovic_import_key_redux_options', function(){ return 'worldmart'; } , 1 );
+            add_action('wp_head', function (){ echo '<link rel="stylesheet" href="' . WORLDMART_TOOLKIT_URL . '/assets/css/custom.css' . '">'; }, 99999);
         }
 
         public function load_plugin_textdomain(){
